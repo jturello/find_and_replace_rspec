@@ -1,22 +1,40 @@
 
 <h1>Enter the text you would like start with.</h1>
 
-<form action='/title'>
+
+<div class="row">
+<form action='/result'>
   <div class="form-group">
     <label for="text">Starting text block:</label>
     <input id="text" name="text" class="form-control" type="text">
   </div>
-  <div class="form-group">
-    <label for="string_find">String to find:</label>
-    <input id="string_find" name="string_find" class="form-control" type="text">
-  </div>
-  <div class="form-group">
-    <label for="replacement">Replace with:</label>
-    <input id="replacement" name="replacement" class="form-control" type="text">
-  </div>
-  <label class="radio-inline"><input type="radio" name="optradio">Whole word search</label>
-  <label class="radio-inline"><input type="radio" name="optradio">Sub-string search</label>
+</div>
 
+<div class="container">
+  <div class="row">
+    <div class="col-sm-2">
+      <div class="form-group">
+        <label class="radio"><input type="radio" name="optradio" id="whole">Whole word search</label>
+        <label class="radio"><input type="radio" name="optradio" id="sub">Sub-string search</label>
+      </div>
+
+    </div>
+    <div class="col-sm-5">
+      <div class="form-group">
+        <label for="search_string">String to find:</label>
+        <input id="search_string" name="search_string" class="form-control" type="text">
+      </div>
+    </div>
+    <div class="col-sm-5">
+      <div class="form-group">
+        <label for="replacement">Replace with:</label>
+        <input id="replacement" name="replacement" class="form-control" type="text">
+      </div>
+    </div>
+  </div>
 
   <button type="submit" class="btn-success">Send</button>
+</div>
+
+
 </form>
